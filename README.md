@@ -52,8 +52,6 @@ face_recognition.py（单元格一训练，单元格二预测，单元格三解�
 
 ### 运行结果:
 
-<left><img src="./data/data22141/test00002.jpg" width = 20%><left>
+<left><img src="./result/trainging.png" width = 80%><left>
 
-results: 0
-
-infer results: jiangwen
+<left><img src="./result/zhangziyi.png" width = 60%><left>
