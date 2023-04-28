@@ -43,7 +43,12 @@ pip install paddlepaddle-gpu -i https://pypi.tuna.tsinghua.edu.cn/simple
 6. 修改标签位置，在 face_recognition.py 代码414行label_list中，将标签顺序与
  ./data/data2393/face/readme.json 中标签对应
 
-7. 预测
+7. 本地预测
+
+8. 本地将 ./data/data2393/model_vgg 和 ./data/data2393/face 一起压缩为 data2393.zip ，上传到 paddle 对应目录 运行face_recognition.py 第三个单元格的代码
+
+face_recognition.py（单元格一训练，单元格二预测，单元格三解压）
+     
 
 ### 运行结果:
 
