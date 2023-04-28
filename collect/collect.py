@@ -9,7 +9,6 @@ num = 300
 # 设置采样间隔
 frame_rate = 4
 
-# 循环读取摄像头数据,循环一百次就是采集一百张
 for i in range(num*frame_rate): 
     # 读取一帧数据
     ret, frame = cap.read()
