@@ -26,7 +26,7 @@ pip install paddlepaddle-gpu -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 问题：网页端需要实现识别自己人脸。但是文件上传不方便，且不安全。
 
-思路:本地采集自己的人脸数据图片，放入本地数据集进行训练，最后在网页端上传模型权重文件，在网页端直接进行预测。
+思路: 电脑本地采集自己的人脸数据图片，在本地对数据集进行训练，最后在paddle网页端上传模型权重文件，在网页端直接进行预测。
 
 
 ### 人脸数据集采集
@@ -40,12 +40,12 @@ pip install paddlepaddle-gpu -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 5. 训练模型，程序会自动将人脸 myface 加入到列表中（人脸文件夹的名字就是类别名）
    
-6. 修改标签位置，在 face_recognition.py 代码414行label_list中，将标签顺序与
+6. 新增预测标签，在 face_recognition.py 代码414行label_list中，加入第四个预测类别 “myface” , 标签位置与
  ./data/data2393/face/readme.json 中标签对应
 
 7. 本地预测
 
-8. 本地将 ./data/data2393/model_vgg 和 ./data/data2393/face 一起压缩为 data2393.zip ，上传到 paddle 对应目录 运行face_recognition.py 第三个单元格的代码
+8. 本地将 ./data/data2393/model_vgg 和 ./data/data2393/face 一起压缩为 data2393.zip ，上传到 paddle 对应目录 运行 face_recognition.py 第三个单元格的代码
 
 face_recognition.py（单元格一训练，单元格二预测，单元格三解压）
      
