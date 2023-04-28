@@ -1,0 +1,31 @@
+{
+    "all_class_images": 617,
+    "all_class_name": "face",
+    "all_class_sum": 4,
+    "class_detail": [
+        {
+            "class_label": 0,
+            "class_name": "jiangwen",
+            "class_test_images": 11,
+            "class_trainer_images": 92
+        },
+        {
+            "class_label": 1,
+            "class_name": "myface",
+            "class_test_images": 30,
+            "class_trainer_images": 270
+        },
+        {
+            "class_label": 2,
+            "class_name": "pengyuyan",
+            "class_test_images": 12,
+            "class_trainer_images": 102
+        },
+        {
+            "class_label": 3,
+            "class_name": "zhangziyi",
+            "class_test_images": 10,
+            "class_trainer_images": 90
+        }
+    ]
+}
