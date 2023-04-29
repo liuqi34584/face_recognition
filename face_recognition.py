@@ -387,7 +387,7 @@ def load_image(path):
 
 infer_imgs = []
 # 选择不同的图片进行预测
-infer_path='./data/data22141/test00002.jpg'
+infer_path='./data/data22141/myface.jpg'
 infer_imgs.append(load_image(infer_path))
 infer_imgs = np.array(infer_imgs)
 print('infer_imgs的维度：',infer_imgs .shape)
@@ -412,7 +412,16 @@ with fluid.scope_guard(inference_scope):
     print('results:',np.argmax(results[0]))
 
     # 训练数据的标签
-    label_list = ["jiangwen","myface","pengyuyan","zhangziyi"]
+    label_list = ["huangrunxia","jiangwen","pengyuyan","zhangziyi"]
     print("infer results: %s" % label_list[np.argmax(results[0])])
 
-# %%
+# In[]
+import zipfile
+import os
+
+#解压原始数据集，将data2393.zip解压至data/data2393目录下
+src_path="/home/aistudio/data/data2393/data2393.zip"
+target_path="/home/aistudio/data/data2393/"
+z = zipfile.ZipFile(src_path, 'r')
+z.extractall(target_path)
+z.close()
